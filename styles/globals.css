@@ -1,21 +1,66 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 300ms ease;
+}
+:root {
+  background-color: #D8D7FF;
+}
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: #D8D7FF;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.flex-body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.flex-body > * {
+  width: 100%;
+}
+/* .flex-body > *:nth-last-child(2) {
+  padding-bottom: 6em;
+} */
+.flex-body main {
+  width: 100%;
+}
+.flex-body main section {
+  width: 100%;
+}
+.flex-body footer {
+  margin-top: auto;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+img {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 80%;
+  }
+}
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +68,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
